@@ -1,8 +1,27 @@
+@import "../../responsive.scss";
+
+
 nav{
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a{
+        transition: all 0.3s ease;
+
+        @include sm{
+            display: none;
+        }
+
+        &:hover{
+            scale: 1.05;
+        }
+    }
+
+
+
+
 
     .left{
         flex: 3;
@@ -41,5 +60,21 @@ nav{
         background-color: #fece51 !important;
         }
        
+
+        .menuIcon{
+            display: none;
+            @include sm{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                cursor: pointer;
+                background-color: #fcf5f3;
+                border-radius: 50%;
+            }
+        }
     }
+
+    
 }
