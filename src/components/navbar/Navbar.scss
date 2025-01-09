@@ -2,6 +2,7 @@
 
 
 nav{
+    background-color: rgb(212, 212, 212);
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -36,8 +37,14 @@ nav{
             align-items: center;
             gap: 10px;
             img{
-                width: 250px;
+                width: 150px;
             }
+        }
+
+        @include md{
+           img{
+            width: 300px;
+           }
         }
         
     }
