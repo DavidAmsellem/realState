@@ -6,6 +6,11 @@
 
     .wrapper{
        padding-right: 50px; 
+       display: flex;
+        flex-direction: column;
+        gap: 50px;
+        overflow-y: scroll;
+        
     }
     
     

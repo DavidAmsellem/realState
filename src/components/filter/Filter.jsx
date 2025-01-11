@@ -9,7 +9,9 @@ function Filter(){
                 <label htmlFor="city">Localidad</label>
                 <input type="text" name="city" id="city" placeholder='Ciudad'/>
             </div>
-            <div className="bottom">
+        </div>
+
+        <div className="bottom">
             <div className="item">
                 <label htmlFor="city">Tipo</label>
                 <select name="type" id="type">
@@ -18,7 +20,9 @@ function Filter(){
                     <option value="rent">Alquilar</option>
                     
                 </select>
-            </div><div className="item">
+                </div>
+                
+            <div className="item">
                 <label htmlFor="property">Propiedad</label>
                 <select name="property" id="property">
                      <option value="">Selecciona</option>
@@ -28,26 +32,29 @@ function Filter(){
                     <option value="land">Terreno</option>
                
                 </select>
-            </div><div className="item">
+            </div>
+            
+            <div className="item">
                 <label htmlFor="minPrice">minPrice</label>
                 <input type="number" name="minPrice" id="minPrice" placeholder='any'/>
 
-            </div><div className="item">
+            </div>
+            
+            <div className="item">
                 <label htmlFor="maxPrice">maxPrice</label>
                 <input type="number" name="maxPrice" id="maxPrice" placeholder='any'/>
 
-
+                </div>
                 <div className="item">
                 <label htmlFor="bedroom">Habitaciones</label>
                 <input type="text" name="bedroom" id="bedroom" placeholder='any'/>
-
-            <div className="bottom">
-                <img src="/search.png" alt="" />
                 </div>
+            <button>
+                <img src="/search.png" alt="" />
+            </button>
+            
             </div>
-            </div>
-            </div>
-        </div>
+        
         </div>
     )
 
