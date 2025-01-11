@@ -1,6 +1,7 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer,TileLayer} from 'react-leaflet'
 import './map.scss'
-import 'leaflet/dist/leaflet.css'
+import 'leaflet/dist/leaflet.css';
+import Pin from '../pin/pin';
 
 function Map({items}) {    
     return (
@@ -9,13 +10,11 @@ function Map({items}) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[37.175190, -3.602031]}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
+        {items.map(item=> (
+          <Pin item={item} key={item.id}/>
+        ))}
       </MapContainer>
     )
 }
 
-export default Map
+export default Map 
